@@ -1,0 +1,26 @@
+.title{
+    display: flex;
+    margin-top: 80px;
+}
+input{
+    height: 30px;
+    margin-top: 20px;
+    width: 85%;
+}
+.body{
+    margin-left: 40px;
+    display: flex;
+}
+
+.des{
+    text-align: left;
+}
+
+.calendar{
+    margin-top: 225px;
+    margin-left: 50px;
+    height: fit-content;
+}
+.box{
+    margin-bottom: 70px;
+}
