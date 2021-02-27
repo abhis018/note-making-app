@@ -1,7 +1,5 @@
 import React from 'react';
 import './Body.css';
-import Calendar from 'react-calendar';
-import 'react-calendar/dist/Calendar.css';
 
 const Body = ({TitleChange, DescriptionChange, DataChange, DateChange}) => {
     return (
@@ -9,15 +7,15 @@ const Body = ({TitleChange, DescriptionChange, DataChange, DateChange}) => {
             <div className="body">
                 <div className="box">
                     <div className="title">
-                        <h2>Title :</h2>
+                        <h2>Title</h2><br/>
                         <input onChange={TitleChange} placeholder="Enter Title"/>
                     </div>
                     <h2 className="des">Description</h2>
-                    <textarea onChange={DescriptionChange} rows = "20" cols = "100" placeholder="Start writing"></textarea>
+                    <textarea onChange={DescriptionChange} rows = "10" cols = "100" placeholder="Start writing"></textarea>
                 </div>
                 <input onChange={DateChange} type="date" className="calendar"/> 
-            </div>
-            <button onClick={DataChange}>Enter</button>   
+                <button onClick={DataChange} className="submit">Submit</button>  
+            </div> 
         </div> 
     )
 }

@@ -1,8 +1,14 @@
 .App {
   text-align: center;
-  background-image: linear-gradient(grey,yellow);
+  background-image: linear-gradient(grey,rgb(54, 54, 49));
 }
-
+:placeholder-shown{
+  font-family: 'Great Vibes', cursive;
+  font-size: larger;
+}
+button{
+  font-family: 'Caveat', cursive;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -6,9 +6,11 @@
     height: 300px;
     text-align: left;
     padding-left: 20px;
+    background-color: rgb(221, 149, 120);
 }
 .newBox{
     display: flex;
+    font-family: 'Kaushan Script', cursive;
 }
 .bold{
     font-weight: bold;
@@ -21,8 +23,45 @@
     width: 100px;
     height: 36px;
     margin-left: 20px;
+    font-family: 'Caveat', cursive;
+    font-size: 17px;
+    
 }
 
 .searchoption{
     margin-bottom: 50px;
+}
+.note-body{
+    display: flex;
+}
+
+.filter1{
+    width: 140px;
+    font-family: 'Caveat', cursive;
+}
+.filter2{
+    height: 36px;
+    margin-top: 30px;
+    width: 150px;
+    font-family: 'Caveat', cursive;
+    font-size: 17px;
+}
+.filter3{
+    width: 140px;
+    font-family: 'Caveat', cursive;
+}
+
+.sort{
+    width: 140px;
+    height: 40px;
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+}
+.sort-filter{
+    padding: 50px;
+    background-color: rgb(236, 213, 213);
+}
+.mapping{
+    background-color: lightcyan;
+    display: flex;
 }

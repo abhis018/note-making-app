@@ -1,3 +1,6 @@
+.body{
+    font-family: 'Kaushan Script', cursive;
+}
 .title{
     display: flex;
     margin-top: 80px;
@@ -18,9 +21,24 @@ input{
 
 .calendar{
     margin-top: 225px;
-    margin-left: 50px;
-    height: fit-content;
+    margin-left: 54px;
+    height: 40px;
+    width: fit-content;
+    background-color: limegreen;
+    border: none;
+    font-size: 14px;
+    border-radius: 10px;
 }
 .box{
     margin-bottom: 70px;
+}
+.submit{
+    height: 40px;
+    width: 140px;
+    margin-top: 25%;
+    margin-left: -140px;
+    font-size: larger;
+    font-family: 'Caveat', cursive;
+    border-radius: 10px;
+    border: none;
 }
