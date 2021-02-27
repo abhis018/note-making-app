@@ -3,7 +3,7 @@ import './Body.css';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 
-const Body = ({TitleChange, DescriptionChange, DataChange}) => {
+const Body = ({TitleChange, DescriptionChange, DataChange, DateChange}) => {
     return (
         <div >
             <div className="body">
@@ -15,7 +15,7 @@ const Body = ({TitleChange, DescriptionChange, DataChange}) => {
                     <h2 className="des">Description</h2>
                     <textarea onChange={DescriptionChange} rows = "20" cols = "100" placeholder="Start writing"></textarea>
                 </div>
-                <Calendar className="calendar"/> 
+                <input onChange={DateChange} type="date" className="calendar"/> 
             </div>
             <button onClick={DataChange}>Enter</button>   
         </div> 

@@ -1,10 +1,16 @@
 import { setDescription } from './actions.js';
-import { CHANGE_TITLE, CHANGE_DESCRIPTION, REQUEST_DATA} from './constants.js';
+import { CHANGE_TITLE, CHANGE_DESCRIPTION, REQUEST_DATA, CHANGE_SEARCHFIELD, CHANGE_DATE, NEW_SORT, FILTER_PRODUCT} from './constants.js';
 
 const initialState = {
     title: '',
     description:'',
     result:[],
+    searchField:'',
+    date:'',
+    week: '',
+    year: '',
+    month: '',
+    sortState: '',
 }
 
 export const enterNotes = (state = initialState, action = {}) => {
@@ -23,7 +29,27 @@ export const enterNotes = (state = initialState, action = {}) => {
             return{
                 ...state,
                 result: state.result.concat(action.payload)
-            }    
+            }
+        case CHANGE_SEARCHFIELD:
+            return{
+                ...state,
+                searchField: action.payload
+            } 
+        case CHANGE_DATE:
+            return{
+                ...state,
+                date: action.payload
+            }
+        case NEW_SORT:
+            return{
+                ...state,
+                result: action.payload
+            }
+        case FILTER_PRODUCT:
+            return {
+                ...state, 
+                result: action.payload
+            }      
         default:
             return state;    
     }

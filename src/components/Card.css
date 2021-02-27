@@ -9,6 +9,20 @@
 }
 .newBox{
     display: flex;
-    background-color: white;
+}
+.bold{
+    font-weight: bold;
     color: brown;
+}
+.input{
+    width: 500px;
+}
+.but{
+    width: 100px;
+    height: 36px;
+    margin-left: 20px;
+}
+
+.searchoption{
+    margin-bottom: 50px;
 }
